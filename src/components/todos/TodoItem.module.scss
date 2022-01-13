@@ -1,0 +1,23 @@
+@use "../../_assets.scss" as use;
+
+.item {
+	margin: 1rem 0;
+	list-style: none;
+	.content {
+		@include use.flex(space-between, center);
+		box-shadow: use.$box-shadow;
+		padding: 1rem;	
+		.actions {
+		button{
+			@extend %secondary-btn;
+		}
+	 }
+	}
+	.edit {
+		@include use.grid(1rem, 15rem);
+		margin: 1.5rem 0;
+		.confirm-edit{
+			@extend %primary-btn;
+		}
+	}
+}

@@ -1,0 +1,56 @@
+// vars
+$primary-bg: #403f3f;
+$primary-color: #fdf6f6;
+$item-color: #cb464a;
+$box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+
+// extends
+%btn {
+  outline: none;
+  border: none;
+  &:hover{
+    filter: brightness(80%);
+  }
+}
+
+%primary-btn {
+  padding: .5rem 1rem;
+  font-size: 1.1rem;
+  background-color: $item-color;
+  color: $primary-color;
+  border-radius: .5rem;
+  cursor: pointer;
+}
+
+%secondary-btn {
+  padding: .5rem 1rem;
+  font-size: 1.1rem;
+  background-color: transparent;
+  color: $primary-color;
+  border-radius: .5rem;
+  cursor: pointer;
+}
+
+// mixin
+@mixin container($mt, $width, $max-width) {
+	margin: $mt auto;
+	width: $width;
+	max-width: $max-width;
+}
+
+@mixin grid($gap, $size) {
+	display: grid;
+  gap: $gap;
+  grid-template-columns: repeat(auto-fill, minmax($size, 1fr));
+}
+
+@mixin flex($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin color($bg-color, $text-color) {
+  background-color: $bg-color;
+  color: $text-color;
+}

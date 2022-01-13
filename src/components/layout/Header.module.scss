@@ -1,0 +1,10 @@
+@use "../../_assets.scss" as use;
+
+.header {
+	@include use.flex(center, center);
+	height: 7rem;
+	box-shadow: use.$box-shadow;
+	.container {
+		@include use.flex(flex-start, center);
+	}
+}

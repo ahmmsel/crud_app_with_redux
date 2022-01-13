@@ -1,0 +1,11 @@
+@use "../../_assets.scss" as use;
+
+input {
+	width: 100%;
+	background-color: transparent;
+	box-shadow: use.$box-shadow;
+	outline: none;
+	border: none;
+	border-radius: .5rem;
+	padding: 1rem .75rem;
+}

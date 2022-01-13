@@ -1,0 +1,8 @@
+@use "../../_assets.scss" as use;
+
+form {
+	@include use.grid(1rem, 15rem);
+	.add-btn {
+		@extend %primary-btn;
+	}
+} 

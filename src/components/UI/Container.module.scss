@@ -1,0 +1,5 @@
+@use  "../../_assets.scss" as mixin;
+
+.container {
+	@include mixin.container(0, 80%, 60rem); 
+}

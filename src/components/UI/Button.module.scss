@@ -1,0 +1,5 @@
+@use "../../_assets.scss" as use;
+
+.btn {
+	@extend %btn;
+}
